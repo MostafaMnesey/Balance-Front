@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../assets/images/logoWithBlack.png";
+import logo from "../../../assets/Images/LogoWithBlack.png";
 import { useState } from "react";
 import { Slide } from "react-awesome-reveal";
 import { Link } from "react-router-dom";
