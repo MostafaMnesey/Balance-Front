@@ -10,7 +10,7 @@ export default function HomeSlide() {
         className=""
         style={{
           ...style,
-          display: "block",
+         
           background: "transparent",
           borderRadius: "50%",
           position: "absolute",
@@ -40,7 +40,7 @@ export default function HomeSlide() {
         className=""
         style={{
           ...style,
-          display: "block",
+       
           background: "transparent",
           borderRadius: "",
           position: "absolute",
