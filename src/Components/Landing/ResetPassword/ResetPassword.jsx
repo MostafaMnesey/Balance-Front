@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../../assets/images/logoWithBlack.png";
+import logo from "../../../assets/Images/LogoWithBlack.png";
 import { Link } from "react-router-dom";
 export default function ForgetPassword() {
   const [password, setPassword] = useState(false);
