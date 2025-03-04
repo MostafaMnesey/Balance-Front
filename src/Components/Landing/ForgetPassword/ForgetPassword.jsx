@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import logo from "../../../assets/Images/LogoWithBlack.png";
-import { Link } from "react-router-dom";
+/* import logo from "../../../assets/Images/LogoWithBlack.png";
+ */import { Link } from "react-router-dom";
 export default function ForgetPassword() {
  const [check, setCheck] = useState(false);
 
