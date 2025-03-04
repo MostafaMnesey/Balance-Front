@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-
- import { Link } from "react-router-dom";
+import logo from "../../../assets/Images/";
+import { Link } from "react-router-dom";
 export default function ForgetPassword() {
  const [check, setCheck] = useState(false);
 
@@ -9,7 +9,7 @@ export default function ForgetPassword() {
       <div className="min-h-[50vh] bg-white">
         <div className=" flex my-5 md:mx-9 justify-start items-center">
        <Link to='/'>
-         <img src='' alt="" />
+         <img src={logo} alt="" />
 
        </Link> 
         </div>
