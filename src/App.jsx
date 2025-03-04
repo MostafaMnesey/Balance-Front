@@ -1,6 +1,6 @@
 import React from 'react'
 import NavBar from './Components/Landing/NavBar/NavBar'
-import { createBrowserRouter, Router, RouterProvider } from 'react-router-dom'
+import { createBrowserRouter, createHashRouter, Router, RouterProvider } from 'react-router-dom'
 import Layout from './assets/LandingLayout/Layout'
 import Home from './Components/Landing/Home/Home'
 import About from './Components/Landing/About/About'
@@ -12,7 +12,7 @@ import SignIn from './Components/Landing/SignIn/SignIn'
 import ForgetPassword from './Components/Landing/ForgetPassword/ForgetPassword'
 import ResetPassword from './Components/Landing/ResetPassword/ResetPassword'
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <Layout/>,
