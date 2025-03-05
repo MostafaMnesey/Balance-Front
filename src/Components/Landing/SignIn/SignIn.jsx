@@ -92,7 +92,7 @@ export default function SignIn() {
             </div>
           </div>
           <Slide direction="right" cascade triggerOnce>
-            <div className="bg-mainColor hover:bg-secondColor transition-all min-h-[90vh] rounded-b-3xl md:rounded-none md:order-last order-first md:rounded-tl-[60px] flex flex-col justify-center items-start  md:rounded-bl-[60px] col-span-1">
+            <div className="bg-mainColor hover:bg-secondColor transition-all min-h-[88vh] rounded-b-3xl md:rounded-none md:order-last order-first md:rounded-tl-[60px] flex flex-col justify-center items-start  md:rounded-bl-[60px] col-span-1">
               <div className="ms-10">
                 <h2 className="text-white text-[50px] font-roboto font-bold">
                   Guide Recovery.

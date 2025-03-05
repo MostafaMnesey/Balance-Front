@@ -2,6 +2,7 @@ import React from 'react'
 import NavBar from './Components/Landing/NavBar/NavBar'
 import { createBrowserRouter, createHashRouter, Router, RouterProvider } from 'react-router-dom'
 import Layout from './assets/LandingLayout/Layout'
+import DashLayout from './assets/DashboardLayout/DashLayout'
 import Home from './Components/Landing/Home/Home'
 import About from './Components/Landing/About/About'
 import Features from './Components/Landing/Features/Features'
@@ -54,10 +55,24 @@ const router = createHashRouter([
     element: <ForgetPassword/>,
   },
   {
-    path: "/resetpassword",
+    path: "/resetpassword:token",
     element: <ResetPassword/>,
     
   },
+  {
+    path: "/Dashboard",
+    element:<DashLayout/>,children:[
+      {
+        path:"Patient",
+        element:<h1>Patient</h1>
+      },
+      {
+        path:"tasks",
+        element:<h1>Tasks</h1>
+      },
+    ]
+  }
+
 ]
 )
 

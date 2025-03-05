@@ -4,9 +4,9 @@ export default function Features() {
   return (
     <div>
       <div className=" min-h-[30vh]   ">
-        <div className="bg-mainColor mt-16 py-10">
+        <div className="bg-mainColor   mt-16 py-10">
           <div className="container mx-auto">
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 ">
+            <div className="grid grid-cols-1  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6 ">
               <Link
                 to="Sleek & Intuitive Interface"
                 spy={true}
