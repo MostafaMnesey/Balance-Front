@@ -81,11 +81,13 @@ export default function SignIn() {
                         </p>
                       </Link>
                     </div>
+             <Link to='/Dashboard/patient'>  
                     <div className="flex  mt-4 mb-5">
-                      <button className=" bg-mainColor  text-white hover:bg-secondColor w-3/4 transition-all  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                    <button className=" bg-mainColor  text-white hover:bg-secondColor w-3/4 transition-all  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
                         Sign In
                       </button>
                     </div>
+                      </Link>
                   </div>
                 </div>
               </div>
