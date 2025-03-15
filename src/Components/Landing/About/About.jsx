@@ -11,6 +11,7 @@ import simg3 from "../../../assets/Images/s2img3.png";
 import simg4 from "../../../assets/Images/s2img4.png";
 
 import img4 from "../../../assets/Images/Ellipse 2 .png";
+import { Link } from "react-router-dom";
 export default function About() {
   return (
     <>
