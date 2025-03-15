@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="bg-secondColor dark:bg-gray-900">
       <div className="container mx-auto">
-        <div className=" grid grid-cols-2 md:grid-cols-5 gap-5 py-8 px-4 mx-auto max-w-screen-xl text-sm text-gray-500 dark:text-gray-400  ">
+        <div className=" grid grid-cols-2 lg:grid-cols-5 gap-5 py-8 px-4 mx-auto max-w-screen-xl text-sm text-gray-500 dark:text-gray-400  ">
           <div className="col-span-2 flex justify-center flex-col">
             <img src={logo} className="h-[48px] w-[173px]" alt="Balance Logo" />
             <p className="mt-6 pe-40 text-white text-[15px] font-roboto dark:text-gray-400">

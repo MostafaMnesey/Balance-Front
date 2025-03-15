@@ -32,7 +32,7 @@ export default function SignIn() {
                 <div className="grid grid-cols-1  ">
                   <div className=" my-8  ">
                     <label
-                      htmlFor="small-input"
+                      htmlFor="Email"
                       className="block mb-2  mx-3 md:mx-0 text-[15px] font-medium text-secondColor font-roboto  dark:text-white"
                     >
                       <div className="flex justify-start items-center">
@@ -42,14 +42,14 @@ export default function SignIn() {
                     </label>
                     <input
                       type="text"
-                      id="small-input"
+                      id="Email"
                       placeholder="Email"
                       className=" w-3/4 place-self-center md:w-3/4 placeholder:text-[#B0B0B0] placeholder-opacity-50 shadow-md     p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 text-sm focus:ring-mainColor focus:border-mainColor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                     />
                   </div>
                   <div className=" mt-4">
                     <label
-                      htmlFor="small-input"
+                      htmlFor="Password"
                       className="block mb-2  mx-3 md:mx-0   text-[15px] font-medium text-secondColor font-roboto  dark:text-white"
                     >
                       <div className="flex justify-start items-center">
@@ -60,7 +60,7 @@ export default function SignIn() {
                     <div className="relative">
                       <input
                         type={password ? "text" : "password"}
-                        id="small-input"
+                        id="Password"
                         placeholder="Password "
                         className=" w-3/4  place-self-center md:w-3/4 text-sm  shadow-md  placeholder:text-[#B0B0B0]   p-2 text-gray-900 border border-gray-300 rounded-lg bg-gray-50    focus:ring-mainColor focus:border-mainColor dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
                       />
@@ -81,13 +81,15 @@ export default function SignIn() {
                         </p>
                       </Link>
                     </div>
-             <Link to='/Dashboard/patient'>  
+             <Link to='/Dashboard/patient'>   
                     <div className="flex  mt-4 mb-5">
-                    <button className=" bg-mainColor  text-white hover:bg-secondColor w-3/4 transition-all  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
+                    <button
+                    onClick={() => console.log("Sign In")}
+                    className=" bg-mainColor  text-white hover:bg-secondColor w-3/4 transition-all  focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">
                         Sign In
                       </button>
                     </div>
-                      </Link>
+                      </Link> 
                   </div>
                 </div>
               </div>

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 export default function SideBar({ component }) {
-  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpen] = useState(true);
 
   return (
     <>
@@ -13,7 +13,7 @@ export default function SideBar({ component }) {
               onClick={() => setIsSidebarOpen(!isSidebarOpen)}
               type="button"
               className={`
-            items-center p-2 mt-2  text-sm text-gray-500 rounded-lg hover:bg-gray-100 
+            flex justify-end p-2 mt-2  text-sm text-gray-500 rounded-lg  hover:bg-mainColor
             focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 
             dark:focus:ring-gray-600
             `}
@@ -38,7 +38,8 @@ export default function SideBar({ component }) {
           {/* Sidebar */}
           <aside
             id="default-sidebar"
-            className={`fixed top-0 left-0 z-40 w-64 h-screen transition-transform bg-gray-50 dark:bg-gray-800 
+            className={`fixed top-0 left-0 z-40 w-2/12 h-[91vh] mt-20 transition-transform bg-mainColor rounded-r-2xl dark:bg-gray-800 
+                flex-flex-col  
           ${isSidebarOpen ? "translate-x-0" : "-translate-x-full"}`}
             aria-label="Sidebar"
           >
@@ -47,9 +48,9 @@ export default function SideBar({ component }) {
               type="button"
               className={`
             ${
-              isSidebarOpen ? `ms-48 block ` : `hidden`
-            }  items-center p-2 mt-2  text-sm text-gray-500 rounded-lg hover:bg-gray-100 
-            focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 
+              isSidebarOpen ? `ms-52 flex justify-center ` : `hidden`
+            }  items-end p-2 mt-2  text-sm text-gray-500 rounded-lg  
+            focus:outline-none  dark:text-gray-400 dark:hover:bg-gray-700 
             dark:focus:ring-gray-600
             `}
             >
@@ -68,7 +69,7 @@ export default function SideBar({ component }) {
                 />
               </svg>
             </button>
-            <div className="h-full px-3 py-4 overflow-y-auto">
+            <div className="h-full px-3 py-4 ">
               <ul className="space-y-2 font-medium">
                 <li>
                   <a
@@ -76,32 +77,18 @@ export default function SideBar({ component }) {
                     className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white 
                   hover:bg-gray-100 dark:hover:bg-gray-700 group"
                   >
-                    <span className="ms-3">Dashboard</span>
+                    <div className="flex justify-between"> <i class="fa-solid fa-grip text-xl"></i><span className="ms-3 mx-5">Dashboard</span></div>
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="#"
-                    className="flex items-center p-2 text-gray-900 rounded-lg dark:text-white 
-                  hover:bg-gray-100 dark:hover:bg-gray-700 group"
-                  >
-                    <span className="flex-1 ms-3 whitespace-nowrap">
-                      Kanban
-                    </span>
-                    <span
-                      className="inline-flex items-center justify-center px-2 ms-3 text-sm font-medium text-gray-800 
-                  bg-gray-100 rounded-full dark:bg-gray-700 dark:text-gray-300"
-                    >
-                      Pro
-                    </span>
-                  </a>
-                </li>
+              
               </ul>
+              <div className="place-content-end">bg</div>
             </div>
+            
           </aside>
 
           {/* Content Area */}
-          <div className={`p-4 ${isSidebarOpen ? "ml-64" : "ml-10"}`}>
+          <div className={`p-4 ${isSidebarOpen ? "ml-64" : "ml-0"}`}>
            <div className="container mx-auto"> {component}</div>
           </div>
         </div>
