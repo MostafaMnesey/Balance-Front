@@ -179,9 +179,11 @@ export default function About() {
               >
                 Focus on patient care while Balance takes care of the rest. Secure, smart, designed for addiction specialists.
               </p>
+              <Link to="/SignUp">
               <button className=" w-3/4 md:w-full lg:w-3/4 self-center mx-10 md:mx-0 md:self-start bg-secondColor py-5 rounded-lg text-white font-medium hover:bg-white hover:text-mainColor transition-all text-[18px]">
                 Get Started Now
               </button>
+              </Link>
               <p className="text-white text-[18px] my-5 xl:pe-60 md:pe-28 font-medium  text-nowrap   text-center underline font-roboto">
               More Information
               </p>
